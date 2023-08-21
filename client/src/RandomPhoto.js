@@ -78,7 +78,7 @@ const RandomPhoto = () => {
 
   return (
     <div style={containerStyle}>
-      {randomPhoto && <img src={`/photos/${randomPhoto}`} alt="Random" style={{ display: 'block', margin: 'auto' }} />}
+      {randomPhoto && <img src={`../public/photos/${randomPhoto}`} alt="Random" style={{ display: 'block', margin: 'auto' }} />}
       <div>
         <button onClick={handleRandomize} disabled={seenPhotos.length >= photos.length} style={buttonStyle}>Randomize</button>
         <button onClick={handleReset} style={buttonStyle}>Reset</button>
